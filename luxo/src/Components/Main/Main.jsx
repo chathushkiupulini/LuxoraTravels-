@@ -1,6 +1,14 @@
 import React from 'react'
-import './main.css'
+import './main.scss'
 import img from '../../Assets/img3.jpg'
+import img2 from '../../Assets/img4.jpg'
+import img3 from '../../Assets/img5.jpg'
+import img4 from '../../Assets/img6.jpg'
+import img5 from '../../Assets/img7.jpg'
+import img6 from '../../Assets/img8.jpg'
+import img7 from '../../Assets/img9.jpg'
+import img8 from '../../Assets/img10.jpg'
+import img9 from '../../Assets/img11.jpg'
 import { HiLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
 
@@ -8,6 +16,91 @@ const Data = [
   {
     id: 1,
     imgSrc: img,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+   {
+    id: 1,
+    imgSrc: img2,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+   {
+    id: 1,
+    imgSrc: img3 ,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+
+   {
+    id: 1,
+    imgSrc: img4,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+
+   {
+    id: 1,
+    imgSrc: img5,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+
+   {
+    id: 1,
+    imgSrc: img6,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+   {
+    id: 1,
+    imgSrc: img7,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+
+   {
+    id: 1,
+    imgSrc: img8,
+    destTitle: 'Changed', // Fixed key name
+    location: 'New Zealand',
+    grade: 'CULTURAL RELAX',
+    fees: '$700',
+    description: 'gfgdjgwiuegfbjkerb bg5huigbb nvriheg8ryg bui54hituhb'
+  },
+
+
+   {
+    id: 1,
+    imgSrc: img9,
     destTitle: 'Changed', // Fixed key name
     location: 'New Zealand',
     grade: 'CULTURAL RELAX',

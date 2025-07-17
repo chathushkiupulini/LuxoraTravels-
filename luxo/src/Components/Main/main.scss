@@ -55,6 +55,100 @@
                 box-shadow: 1 4px 4px rgb(85,85,114,0.549);
                 transition: .3s ease;
             }
+
+            .imageDiv{
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+
+                .img{
+                    height: 180px;
+                    width: 100px;
+                    object-fit: cover;
+                    transition: 2s ease;
+                }
+
+                &:hover{
+                    img{
+                    transform: scale(1.1);
+                    }
+                }
+            }
+            .cardInfo{
+                padding: 1rem;
+
+                .destTitle{
+                    color: var(--blackColor);
+                    font-size: 1.25rem;
+                }
+                .continent{
+                    gap: 0.5rem;
+
+                    .icon{
+                        color: var(--TextColor);
+                        font-size: 18px;
+                    }
+                    .name{
+                        color: var(--TextColor);
+                        font-size: 400;
+                        font-weight: 14px;
+                    }
+                }
+
+                .fees{
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    margin: 1rem 0;
+                    border-top: 1.5px solid var(--greyText);
+                    border-bottom: 1.5px solid var(--greyText);
+
+                    .grade{
+                        color: var(--TextColor);
+                        max-width: 100%px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        small{
+                            text-align: center;
+                            background: var(--GradientColor);
+                            border-radius: 1rem;
+                            color: var(--whiteColor);
+                            padding: 1px 10 px;
+                            font-size: 10px;
+                        }
+
+                    }
+
+                    .price{
+                        font-size: 2rem;
+                        color: var(--blackColor);
+                    }
+
+                    .desc{
+                        font-size: 13px;
+                        color: var(--TextColor);
+                        font-weight: 500;
+                    }
+                     
+                    .btn{
+                        margin-top: 1rem;
+                        color: var(--whiteColor);
+                        font-weight: 600;
+                        justify-content: space-between;
+                        gap: 0.5rem;
+
+                        .icon{
+                            align-self: center;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                
+
+            }
         }
     }
  }
