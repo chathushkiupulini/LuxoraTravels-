@@ -8,6 +8,7 @@ import { AiFillYoutube } from "react-icons/ai"
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
 
+
 function Footer() {
     return (
         <section className='footer'>
