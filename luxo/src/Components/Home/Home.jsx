@@ -1,8 +1,14 @@
 import React from 'react'
-import './home.scss'
+import './home.css'
 import video from '../../Assets/vedio1.mp4'; 
 // replace with exact filename
 import { GrLocation } from "react-icons/gr";
+import { HiFilter } from "react-icons/hi";
+import { TfiFacebook } from "react-icons/tfi";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaTripadvisor } from "react-icons/fa";
+import { FaListAlt } from "react-icons/fa";
+import { TbAppsFilled } from "react-icons/tb";
 
 
 
@@ -23,6 +29,8 @@ const Home = () => {
           <h1 className='homeTitle'>
             Search your Holiday
           </h1>
+
+          </div>
 
         </div>
         <div className="cardDiv grid">
@@ -54,13 +62,34 @@ const Home = () => {
                 
                </div>
 
+               <div className="searchOption flex">
+                <HiFilter className ="icon"/>
+                <span>MORE FILTERS</span>
+                </div>
+
           </div>
 
           </div>
-        </div>
+
+          <div className="homeFooterIcons flex">
+            <div className="rightIcons">
+              <TfiFacebook className='icon'/>
+              <FaSquareInstagram className='icon'/>
+              <FaTripadvisor className='icon'/>
+          </div>
+
+          <div className="leftIcons">
+             <FaListAlt className='icon'/>
+              <TbAppsFilled className='icon'/>
+            
+
+          </div>
+          </div>
+        
       
      </section>
     
+  
   )
 }
 
