@@ -1,5 +1,5 @@
 import React from 'react'
-import './footer.css'
+import './footer.scss'
 import video2 from '../../Assets/video2.mp4'
 import { FiSend } from "react-icons/fi";
 import { MdTravelExplore } from "react-icons/md";
