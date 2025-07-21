@@ -1,4 +1,6 @@
-import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import './main.scss'
 import img from '../../Assets/img3.jpg'
 import img2 from '../../Assets/img4.jpg'
@@ -109,11 +111,23 @@ const Data = [
   },
 ];
 
+
+
 const Main = () => {
-  return (
+
+    //lets create a react hook to add a scroll animation...
+    useEffect(()=>{
+      AOS.init({duration:2000})
+    },[])
+   
+   
+    
+
+   return(
+
     <section className='main container section'>
       <div className='secTitle'>
-        <h3 className='title'>
+        <h3 data-AOS ="fade-right" className='title'>
           Most visited destinations
         </h3>
       </div>
@@ -122,7 +136,9 @@ const Main = () => {
         {
           Data.map(({ id, imgSrc, destTitle, location, grade, fees, description }) => {
             return (
-              <div key={id} className="singleDestination">
+              <div key={id} 
+              data-AOS ="fade-up" 
+              className="singleDestination">
 
                 <div className="imageDiv">
                   <img src={imgSrc} alt={destTitle} />

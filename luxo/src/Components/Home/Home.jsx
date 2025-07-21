@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './home.css'
 import video from '../../Assets/vedio1.mp4'; 
 // replace with exact filename
@@ -10,9 +10,16 @@ import { FaTripadvisor } from "react-icons/fa";
 import { FaListAlt } from "react-icons/fa";
 import { TbAppsFilled } from "react-icons/tb";
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 
 const Home = () => {
+  //lets create a react hook to add a scroll animation...
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  },[]);
   return (
     
      <section className='home'>
@@ -22,7 +29,7 @@ const Home = () => {
         <div className='textDiv'>
 
           
-          <span className='smallText'>
+          <span data-AOS ="fade-up" className='smallText'>
             Our Packages 
           </span>
 
@@ -33,7 +40,7 @@ const Home = () => {
           </div>
 
         </div>
-        <div className="cardDiv grid">
+        <div  data-AOS ="fade-up"className="cardDiv grid">
           <div className="destinationInput">
             <label htmlFor='city'>Search your
                destination:</label>
@@ -71,7 +78,7 @@ const Home = () => {
 
           </div>
 
-          <div className="homeFooterIcons flex">
+          <div data-AOS ="fade-up" className="homeFooterIcons flex">
             <div className="rightIcons">
               <TfiFacebook className='icon'/>
               <FaSquareInstagram className='icon'/>

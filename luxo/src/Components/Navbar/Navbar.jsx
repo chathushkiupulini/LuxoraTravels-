@@ -20,28 +20,28 @@ const Navbar = () => {
       <nav className={`navBar ${navOpen ? 'activeNavbar' : ''}`}>
         <ul className="navLists">
           <li className="navItem">
-            <a href="/#" className="navLink">Home</a>
+            <a href="#home" className="navLink">Home</a>
           </li>
           <li className="navItem">
-            <a href="/#about" className="navLink">About</a>
+            <a href="#about" className="navLink">About</a>
           </li>
           <li className="navItem">
-            <a href="/#services" className="navLink">Services</a>
+            <a href="#services" className="navLink">Services</a>
           </li>
           <li className="navItem">
-            <a href="/#destinations" className="navLink">Destinations</a>
+            <a href="#destinations" className="navLink">Destinations</a>
           </li>
           <li className="navItem">
-            <a href="/#gallery" className="navLink">Gallery</a>
+            <a href="#gallery" className="navLink">Gallery</a>
           </li>
           <li className="navItem">
-            <a href="/#blog" className="navLink">Blog</a>
+            <a href="#blog" className="navLink">Blog</a>
           </li>
           <li className="navItem">
-            <a href="/#contact" className="navLink">Contact</a>
+            <a href="#contact" className="navLink">Contact</a>
           </li>
           <li className="navItem btn">
-            <a href="/#book" className="navLink">Book Now</a>
+            <a href="#book" className="navLink">Book Now</a>
           </li>
         </ul>
 
