@@ -1,6 +1,6 @@
 
 import './footer.scss'
-import video2 from '../../Assets/video2.mp4'
+import video2 from '../../Assets/video1.mp4'
 import { FiSend } from "react-icons/fi";
 import { MdTravelExplore } from "react-icons/md";
 import { AiOutlineTwitter } from "react-icons/ai";
