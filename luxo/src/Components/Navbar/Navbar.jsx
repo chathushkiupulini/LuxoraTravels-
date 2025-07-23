@@ -18,15 +18,22 @@ const Navbar = () => {
 
       <nav className={`navBar ${navOpen ? 'activeNavbar' : ''}`}>
         <ul className="navLists">
-          {['home', 'about', 'services', 'destinations', 'gallery', 'blog', 'contact'].map((section) => (
+          {['home', 'about', 'services', 'destinations', 'gallery'].map((section) => (
             <li className="navItem" key={section}>
               <a href={`#${section}`} className="navLink">
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             </li>
           ))}
-          <li className="navItem btn">
-            <a href="#book" className="navLink">Book Now</a>
+
+          {/* ✅ Login Button */}
+          <li className="navItem">
+            <a href="#login" className="navLink loginBtn">Login</a>
+          </li>
+
+          {/* ✅ Book Now Button */}
+          <li className="navItem">
+            <a href="#book" className="navLink bookBtn">Book Now</a>
           </li>
         </ul>
 
