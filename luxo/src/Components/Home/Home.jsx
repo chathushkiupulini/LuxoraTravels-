@@ -22,7 +22,7 @@ const Home = () => {
 
         <div className="heroText" data-aos="fade-up">
           <h1>Plan Your Trip With LUXO</h1>
-          <p>Travel to your favourite place with care and comfort.</p>
+          <p>Your World of Luxury Awaits</p>
           <button className="exploreBtn">Register Now</button>
         </div>
       </div>

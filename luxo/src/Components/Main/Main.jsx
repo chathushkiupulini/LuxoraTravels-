@@ -67,13 +67,13 @@ const Data = [
     description: 'Whitewashed houses, blue domes, and amazing sunsets.'
   },
   {
-    id: 3,
-    imgSrc: img3,
-    destTitle: 'Kyoto',
-    location: 'Japan',
-    grade: 'CULTURAL HERITAGE',
-    fees: '$920',
-    description: 'Bamboo forests, ancient temples, and a deep cultural vibe.'
+    id: 14,
+    imgSrc: img14,
+    destTitle: 'New York',
+    location: 'USA',
+    grade: 'ICONIC CITY',
+    fees: '$1100',
+    description: 'Skylines, Broadway, and cultural fusion in every street.'
   },
   {
     id: 4,
@@ -166,13 +166,12 @@ const Data = [
     description: 'Gaudí architecture and Mediterranean charm.'
   },
   {
-    id: 14,
-    imgSrc: img14,
-    destTitle: 'New York',
-    location: 'USA',
-    grade: 'ICONIC CITY',
-    fees: '$1100',
-    description: 'Skylines, Broadway, and cultural fusion in every street.'
+    imgSrc: img3,
+    destTitle: 'Kyoto',
+    location: 'Japan',
+    grade: 'CULTURAL HERITAGE',
+    fees: '$920',
+    description: 'Bamboo forests, ancient temples, and a deep cultural vibe.'
   },
   {
     id: 15,

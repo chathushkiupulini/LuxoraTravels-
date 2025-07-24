@@ -17,7 +17,7 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
-      opacity: 0.5;
+      
     }
   }
 
@@ -40,7 +40,7 @@
       gap: 1.5rem;
 
       .text {
-        color: #fff;
+        color: #ffffff;
 
         small {
           font-size: 0.9rem;
@@ -71,7 +71,7 @@
           align-items: center;
           gap: 0.5rem;
           background-color: var(--PrimaryColor);
-          color: #fff;
+          color: #ffffff9c;
           padding: 0.8rem 1.4rem;
           border-radius: 50px;
           cursor: pointer;
@@ -85,7 +85,7 @@
     }
 
     .footerCard {
-      background: #fff;
+      background: #ffffff7a;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       padding: 3rem 2rem;
@@ -115,8 +115,10 @@
 
         p {
           font-size: 0.95rem;
-          color: #555;
+          color: #141313; 
           margin-bottom: 1rem;
+         font-family: 'Playfair Display', serif;
+
         }
 
         .footerSocials {
@@ -155,7 +157,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: #555;
+            color: #191818;
             font-size: 0.95rem;
             margin-bottom: 0.6rem;
             cursor: pointer;
@@ -181,7 +183,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
-      color: #fff;
+      color: #ffffff;
       font-size: 0.85rem;
       width: 100%;
       max-width: 1200px;

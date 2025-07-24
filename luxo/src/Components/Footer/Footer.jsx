@@ -1,7 +1,7 @@
 // Footer.jsx
 import React from 'react';
 import './footer.scss';
-import video2 from '../../Assets/video2.mp4';
+import video2 from '../../Assets/video3.mp4';
 import { MdTravelExplore } from 'react-icons/md';
 import { AiOutlineTwitter, AiFillYoutube, AiFillInstagram } from 'react-icons/ai';
 import { FaTripadvisor } from 'react-icons/fa';
@@ -39,7 +39,8 @@ const Footer = () => {
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempore non odio provident nobis.
+              Discover the world with LUXO TRAVELS.  your trusted partner in unforgettable journeys. 
+              From iconic cities to hidden gems, we ensure comfort, care, and adventure in every trip.
             </p>
             <div className="footerSocials flex">
               <AiOutlineTwitter className="icon" />
