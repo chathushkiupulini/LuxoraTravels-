@@ -1,183 +1,117 @@
-:root{
-    --PrimaryColor: hsl(199,100%,33%);
-    --SecondaryColor: hsl(187,85%,43%);
-    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%,33%));
-    --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%,16%);
-    --TextColor : hsl(240,4%,36%);
-    --whiteColorDeam: hsl(0,0%,93%);
-    --greyText: rgb(190,190,190,);
-    --inputColor: rgb(239,239,239);
-    --bodyColor: rgb(240,240,246);
-    --cardBg: rgb(225,225,235);
-
+.section {
+  padding: 4rem 2rem;
+  background: #f4f4f4;
 }
- .main{
+
+.secTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.secContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.singleDestination {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  .imageDiv {
     width: 100%;
+    height: 200px;
+    overflow: hidden;
 
-    .secTitle{
-        .title{ 
-        position: relative;
-        width: max-content;
-        color: var(--TextColor);
-        margin: 1rem 0;
-        z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-        &::after{
-            position: absolute;
-            content: '';
-            background: var(--SecondaryColor);
-            height: 5px;
-            width: 120px;
-            right: 0;
-            bottom: 5px;
-            z-index: -1;
+  .cardInfo {
+    padding: 1rem;
 
-        }
+    .destTitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .continent {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.95rem;
+      color: #1e1d1f;
+
+      img {
+    border-radius: 2px;
+    object-fit: cover;
+
+      .icon {
+        color: #007bff;
+        font-size: small;
+      }
+    }
+}
+
+    .fees {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+
+      .grade {
+        color: #555;
+        font-weight: 600;
+      }
+
+      .price h5 {
+        margin: 0;
+        color: #28a745;
       }
     }
 
-    .secContent{
-        justify-content: center;
-        gap: 1.5rem;
-
-        .singleDestination{
-            height: 100%;
-            display: grid;
-            row-gap: 10px;
-            border-radius: 10px;
-            align-items: center;
-            background: var(--cardBg);
-            box-shadow: 0 2px 4px rgb(140,140,141,0.549);
-            overflow: hidden;
-            &:hover{
-                background: var(--cardBg);
-                box-shadow: 1 4px 4px rgb(85,85,114,0.549);
-                transition: .3s ease;
-            }
-
-            .imageDiv{
-                height: 100px;
-                width: 100px;
-                overflow: hidden;
-
-                .img{
-                    height: 180px;
-                    width: 100px;
-                    object-fit: cover;
-                    transition: 2s ease;
-                }
-
-                &:hover{
-                    img{
-                    transform: scale(1.1);
-                    }
-                }
-            }
-            .cardInfo{
-                padding: 1rem;
-
-                .destTitle{
-                    color: var(--blackColor);
-                    font-size: 1.25rem;
-                }
-                .continent{
-                    gap: 0.5rem;
-
-                    .icon{
-                        color: var(--TextColor);
-                        font-size: 18px;
-                    }
-                    .name{
-                        color: var(--TextColor);
-                        font-size: 400;
-                        font-weight: 14px;
-                    }
-                }
-
-                .fees{
-                    width: 100%;
-                    justify-content: space-between;
-                    padding: 1rem;
-                    margin: 1rem 0;
-                    border-top: 1.5px solid var(--greyText);
-                    border-bottom: 1.5px solid var(--greyText);
-
-                    .grade{
-                        color: var(--TextColor);
-                        max-width: 100%px;
-                        line-height: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        small{
-                            text-align: center;
-                            background: var(--GradientColor);
-                            border-radius: 1rem;
-                            color: var(--whiteColor);
-                            padding: 1px 10 px;
-                            font-size: 10px;
-                        }
-
-                    }
-
-                    .price{
-                        font-size: 2rem;
-                        color: var(--blackColor);
-                    }
-
-                    .desc{
-                        font-size: 13px;
-                        color: var(--TextColor);
-                        font-weight: 500;
-                    }
-                     
-                    .btn{
-                        margin-top: 1rem;
-                        color: var(--whiteColor);
-                        font-weight: 600;
-                        justify-content: space-between;
-                        gap: 0.5rem;
-
-                        .icon{
-                            align-self: center;
-                            font-size: 18px;
-                        }
-                    }
-                }
-                
-
-            }
-        }
+    .desc {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #666;
     }
- }
+  }
 
- @media screen and (min-width: 500px) {
-    .title{
-        font-size: 1.5rem;
-        &::after{
-            width: 155px !important;
-        }
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #0056b3;
     }
 
-    .secContent{
-        grid-template-columns: repeat(2,1fr);
-
-        .singleDestination{
-            height: auto;
-        }
+    .icon {
+      font-size: 1.2rem;
     }
-    
- }
-
- @media screen and (min-width: 840px) {
-    .secContent{
-        grid-template-columns: repeat(3,1fr);
-
-        .singleDestination{
-            height: auto;
-        }
-    }
-    
- }
+  }
+}

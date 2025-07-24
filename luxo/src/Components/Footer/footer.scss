@@ -1,334 +1,235 @@
-:root{
-    --PrimaryColor: hsl(199,100%,33%);
-    --SecondaryColor: hsl(187,85%,43%);
-    --GradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%,33%));
-    --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%,16%);
-    --TextColor : hsl(240,4%,36%);
-    --whiteColorDeam: hsl(0,0%,93%);
-    --greyText: rgb(190,190,190,);
-    --inputColor: rgb(239,239,239);
-    --bodyColor: rgb(240,240,246);
-    --cardBg: rgb(225,225,235);
+// footer.scss
 
-}
+.footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 
-.footer{
+  .videoDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    z-index: 0;
+
+    video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+  }
+
+  .secContent {
     position: relative;
-    padding: 2rem 0;
+    z-index: 2;
+    padding: 4rem 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: auto;
 
-    .videoDiv{
-        position: absolute;
-        height: 100%;
-        width: 100%;
+    .contactDiv {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      gap: 1.5rem;
 
-        video{
-            height:100% ;
-            object-fit:cover;
+      .text {
+        color: #fff;
+
+        small {
+          font-size: 0.9rem;
         }
 
-        &::after{
-            content: '';
-            position: absolute;
-            background: rgb(10, 84, 107, 0.307);
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            mix-blend-mode: multiply;
-
-
+        h2 {
+          font-size: 2rem;
         }
-    }
+      }
 
-    .setContent{
-        width: 100%;
-        height:max-content;
-        padding: 2rem initial;
-        display:flex;
+      .inputDiv {
+        display: flex;
         align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        input {
+          padding: 0.8rem 1.2rem;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          width: 250px;
+        }
+
+        .btn {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: var(--PrimaryColor);
+          color: #fff;
+          padding: 0.8rem 1.4rem;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          &:hover {
+            background-color: var(--SecondaryColor);
+          }
+        }
+      }
+    }
+
+    .footerCard {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 3rem 2rem;
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+
+      .footerIntro {
+        flex: 1 1 250px;
+
+        .logoDiv {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+
+          .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--PrimaryColor);
+            text-decoration: none;
+          }
+        }
+
+        p {
+          font-size: 0.95rem;
+          color: #555;
+          margin-bottom: 1rem;
+        }
+
+        .footerSocials {
+          display: flex;
+          gap: 1rem;
+
+          .icon {
+            font-size: 1.5rem;
+            color: var(--PrimaryColor);
+            transition: 0.3s;
+
+            &:hover {
+              color: var(--SecondaryColor);
+            }
+          }
+        }
+      }
+
+      .footerLinks {
+        flex: 2 1 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .linkGroup {
+          min-width: 160px;
+
+          .groupTitle {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #222;
+          }
+
+          .footerList {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+            cursor: pointer;
+            transition: 0.3s;
+
+            .icon {
+              color: var(--PrimaryColor);
+              font-size: 1rem;
+            }
+
+            &:hover {
+              color: var(--PrimaryColor);
+            }
+          }
+        }
+      }
+    }
+
+    .footerBottom {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: #fff;
+      font-size: 0.85rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+  }
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 992px) {
+  .footer {
+    .footerCard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .footerIntro {
+        align-items: center;
+      }
+
+      .footerLinks {
         justify-content: center;
-        flex-direction: column;
-        margin: auto;
-        row-gap: 2rem;
-        z-index: 100;
-
-        .contactDiv{
-            justify-content: space-between;
-            flex-direction: column;
-            gap: 1rem;
-
-            .text{
-                small{
-                    font-size: 13px;
-                    font-weight: 400;
-                    color: var(--whiteColor);
-                }
-                
-                h2{
-                    color: var(--whiteColor);
-                    font-size: 1.8rem;
-
-                }
-            }
-            .inputDiv{
-                width: 100%;
-                gap: 1rem;
-                flex-direction: column;
-
-                input{
-                    width: 100%;
-                    padding: 0.5rem 0.6rem;
-                    border-radius: 3rem;
-                    border: 1px solid var(--whiteColor);
-
-                    &::placeholder{
-                        color: var(--whiteColor);
-                        opacity: 0.5;
-                    }
-
-                }
-
-                .btn{
-                    width: 100%px;
-                    justify-content: center;
-                    color: var(--whiteColor);
-                    font-weight: 500;
-                    gap: 0.5rem;
-
-                    .icon{
-                        font-size: 18px;
-                    }
-                }
-
-            }
-
-        }
-
-        .footerCard{
-            position: relative;
-            padding: 1rem 1rem 4rem;
-            gap: 2rem;
-            border-radius: 1rem;
-            background: var(--bodyColor);
-            width: 100%;
-            justify-content: center;
-            flex-direction: column;
-            align-items: flex-start;
-            overflow: hidden;
-
-            .footerIntro{
-                flex-basis: 50%;
-                justify-content: center;
-                align-items: flex-start;
-                flex-direction: column;
-                row-gap: 0.5rem;
-            }
-
-            .logoDiv{
-              .logo{
-                color: var(--blackColor);
-                font-weight: 600;
-
-                .icon{
-                    font-size: 25px;
-                    color: var(--PrimaryColor);
-                    margin-right: 10px;
-
-                }
-
-
-            }
-        }
-
-        .footerParagraph{
-            font-size: 13px;
-            color: var(--TextColor);
-        }
-
-        .footerSocials{
-            column-gap: 0.5rem;
-
-            .icon{
-                color: var(--PrimaryColor);
-                font-size: 20px;
-
-                &:hover{
-                    color: var(--PrimaryColor);
-                }
-            }
-
-        }
-        .footerLinks{
-            flex-basis: 50%;
-            width: 100%;
-            gap: 1rem;
-            grid-template-columns: repeat(2, 1fr);
-            justify-content: space-between;
-
-            .linkGroup{
-                .groupTitle{
-                    display: block;
-                    font-weight: 600;
-                    color: var(--blackColor);
-                    margin-bottom: 0.5rem;
-                }
-
-                .footerList{
-                    font-size: 15px;
-                    color: var(--TextColor);
-                    transition: 0.3s ease-in-out;
-
-                    .icon{
-                        font-size: 15px;
-                        color: var(--greyText);
-                    }
-
-                    &:hover{
-                        color: var(--PrimaryColor);
-                        transform: translate(7px);
-
-                        .icon{
-                            color: var(--SecondaryColor);
-                        }
-
-                    }
-                }
-            }
-
-        }
-
-        .footerDiv{
-            flex-direction: column;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--SecondaryColor);
-            padding: 0.5rem 2rem;
-
-            small{
-                font-size: 10px;
-                color: var(--whiteColor);
-            }
-        }
-        }
-
-        
-
+      }
     }
+
+    .footerBottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }
 
-@media screen and (min-width: 500px) {
-    .footer{
-        .secContent{
-            .footerCard{
-                .footerLinks{
-                    grid-template-columns:repeat(3,1fr) ;
-                    padding-bottom: 1rem;
-                }
+@media screen and (max-width: 576px) {
+  .footer .contactDiv {
+    flex-direction: column;
+    align-items: flex-start;
 
-                .footerDiv{
-                    justify-content: space-between;
-                    flex-direction: row;
+    .inputDiv {
+      flex-direction: column;
+      align-items: stretch;
 
-                    small{
-                        font-size: 14px;
-                        color: var(--whiteColor);
-                    }
-                }
-            }
-        }
+      input {
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
     }
-    
+  }
 }
-
-
-@media screen and (min-width: 600px) {
-    .footer{
-        .secContent{
-            
-           .contactDiv{
-            flex-direction: row;
-            justify-content: space-between;
-
-            .inputDiv{
-                width: max-content;
-                flex-direction: row;
-                justify-content: flex-start;
-
-                input{
-                    width: 60%;
-                }
-
-                .btn{
-                    width: max-content;
-                }
-            }
-           }
-        }
-    }
-    
-}
-
-@media screen and (min-width: 840px) {
-    .footer{
-        padding: 5rem 0;
-        .secContent{
-            .footerCard{
-                flex-direction: row;
-
-                .footerLinks{
-                    grid-template-columns: repeat(3,1fr);
-                    padding-bottom: 1rem;
-                }
-            }
-            
-           
-        }
-    }
-    
-}
-
-
-@media screen and (min-width: 1024px) {
-    .footer{
-       .secContent{
-        .footerCard{
-            padding: 3rem 1rem;
-
-            .footerIntro{
-                .footerParagraph{
-                    font-size: 15px;
-                    color: var(--TextColor);
-                }
-                .footerSocials{
-                    column-gap: 0.5rem;
-                    .icon{
-                        color: var(--blackColor);
-                        font-size: 25px;
-                        &:hover{
-                            color: var(--PrimaryColor);
-                        }
-                    }
-                }
-            }
-            .footerLinks{
-                .linkGroup{
-                    font-size: 16px;
-                    padding: 5px 0;
-                }
-            }
-        }
-
-       }
-
-
-    }
-}
-    

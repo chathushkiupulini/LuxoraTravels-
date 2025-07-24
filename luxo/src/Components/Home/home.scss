@@ -53,14 +53,16 @@
   h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
+    
   }
 
   p {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 300;
-    color: #eee;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:   rgb(255, 255, 255);
   }
 
   .exploreBtn {
@@ -103,7 +105,7 @@
       gap: 1.5rem;
       width: 90%;
       max-width: 1100px;
-      box-shadow: 0 8px 30px rgba(32, 17, 17, 0.2);
+      box-shadow: 0 8px 30px rgba(89, 84, 84, 0.944);
 
       label {
         color: rgb(24, 23, 23);
@@ -125,7 +127,7 @@
 
       h4 {
         margin-left: 0.5rem;
-        color: white;
+        color: rgb(11, 11, 11);
       }
 
       .searchOption {
