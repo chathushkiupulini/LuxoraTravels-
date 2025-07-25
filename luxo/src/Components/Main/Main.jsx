@@ -21,6 +21,8 @@ import img16 from '../../Assets/img16.jpg'
 import { HiLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
 import Flag from 'react-world-flags';
+import { MdLocationPin } from "react-icons/md";
+import { TbListDetails } from "react-icons/tb";
 
 const getCountryCode = (countryName) => {
   const countryMap = {
@@ -230,7 +232,7 @@ const Main = () => {
                   <h4 className='destTitle'>{destTitle}</h4>
 
                  <span className='continent flex'>
-                   <HiLocationMarker className='icon' />
+                   <MdLocationPin className='icon' />
                             <Flag code={getCountryCode(location)} style={{ width: '20px', height: '15px', marginRight: '6px' }} />
                                  <span className='name'>{location}</span>
                                                  </span>
@@ -251,7 +253,7 @@ const Main = () => {
                 </div>
 
                 <button className='btn flex'>
-                  DETAILS <LuClipboardCheck className='icon' />
+                  DETAILS <TbListDetails className='icon' />
                 </button>
 
               </div>

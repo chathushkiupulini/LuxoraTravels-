@@ -83,7 +83,7 @@ const Footer = () => {
 
         <div className="footerBottom flex">
           <small>BEST TRAVEL WEBSITE THEME</small>
-          <small>COPYRIGHTS RESERVED © ISRATECH 2025</small>
+          <small>© 2025 LUXO TRAVELS. All rights reserved</small>
         </div>
       </div>
     </section>
